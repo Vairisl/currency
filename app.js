@@ -1,14 +1,19 @@
-let x = 5
-let y = 10
+let exchangeRates = {
+    eur: 1,
+    lvl: 0.69,
+    usd: 1.11
+}
 
-let min = function(x, y) {
-    if(x > y){
-        return y
-    } else {
-        return x
-    }
-} 
-//---------------------------------------------------------------
-let c = min(5, 6)
-let z = min(12, 8)
-let f = min(-4, -5)
+let usdToLvl = usd => {
+    let eur = usd / exchangeRates.usd
+    let lvl = eur * exchangeRates.lvl
+    return lvl
+}
+
+//vai
+
+let usdToLvl = usd => {
+    usd / exchangeRates.usd * exchangeRates.lvl
+}
+
+let lvl = usdToLvl(10)
