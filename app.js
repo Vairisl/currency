@@ -10,10 +10,11 @@ let usdToLvl = usd => {
     return lvl
 }
 
-//vai
-
-let usdToLvl = usd => {
-    usd / exchangeRates.usd * exchangeRates.lvl
+let lvlToUsd = lvl => {
+    let eur = lvl / exchangeRates.lvl
+    let usd = eur * exchangeRates.usd
+    return usd
 }
 
 let lvl = usdToLvl(10)
+let usd = lvlToUsd(10)
