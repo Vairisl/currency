@@ -16,5 +16,14 @@ let lvlToUsd = lvl => {
     return usd
 }
 
-let lvl = usdToLvl(10)
-let usd = lvlToUsd(10)
+function converter(nauda, valueFrom, valueTo) {
+    valueFrom = exchangeRates[valueFrom]
+    valueTo = exchangeRates[valueTo]
+    atbilde = (nauda / valueFrom) * valueTo
+    return atbilde
+}
+
+//let lvl = usdToLvl(10)
+//let usd = lvlToUsd(10)
+
+let summa = converter(10, "lvl", "eur")
