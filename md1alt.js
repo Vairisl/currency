@@ -11,15 +11,14 @@ grid[8] = [7,7,null,null,null,1,1,1]
 grid[9] = [7,7,7,null,null,1,1,1]
 
 
-function getValue(y, x, array){
-    if(typeof array[x][y] === 'undefined') {
-        console.log (Lol)
-}
-    else {
-       console.log (array[x][y])
-}
+function getValue(y, x){
+    if (x in grid && y in grid[x]){
+        return grid[x][y]
+    } else {
+        //undefined kluda
+    }
 }
 
-getValue(0,0,grid);
+console.log(getValue(21,22));
 
 
