@@ -26,4 +26,4 @@ function converter(nauda, valueFrom, valueTo) {
 //let lvl = usdToLvl(10)
 //let usd = lvlToUsd(10)
 
-let summa = converter(10, "lvl", "eur")
+let summa = converter(10, "eur", "usd")
