@@ -1,0 +1,23 @@
+1. let funkcija =  (x) { - Funkcija kurai tiek padots 1 arguments
+2.    let masivs = [] - Izveidots tukš masīvs
+3.    for (let i = 0; i < x; i++) { - Izveidots parasts loops no 1 - x
+4.         for (let j = 2; j < i; j++){ - Izveidots loops loopa.
+5.             if ()
+         }
+         masivs.push(i)
+    }
+
+    return masivs
+}
+
+
+
+
+
+
+
+
+
+
+5. 10 līdz +infinity
+1.  
